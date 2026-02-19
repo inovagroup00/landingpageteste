@@ -19,7 +19,7 @@ export default function VideoPage() {
   return (
     <>
       <Head>
-        <title>Vídeo demo — Landing Page</title>
+        <title>Hub360 — Vídeo Institucional</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -43,7 +43,7 @@ export default function VideoPage() {
           </Link>
           <span style={{ color: "rgba(255,255,255,0.15)" }}>|</span>
           <span style={{ color: "rgba(255,255,255,0.7)", fontSize: "15px", fontWeight: 600 }}>
-            🎬 Demonstração em vídeo
+            🎬 Hub360 — Banco Digital do Seu Nicho
           </span>
         </nav>
 

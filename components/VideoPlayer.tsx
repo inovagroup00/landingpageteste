@@ -1,5 +1,5 @@
 import { Player } from "@remotion/player";
-import { LandingPage } from "../src/LandingPage";
+import { Hub360Video } from "../src/Hub360Video";
 
 export default function VideoPlayer() {
   return (
@@ -7,31 +7,22 @@ export default function VideoPlayer() {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      gap: "24px",
-      padding: "40px 20px",
+      gap: "20px",
+      padding: "0 20px",
     }}>
-      <h1 style={{
-        margin: 0,
-        color: "white",
-        fontFamily: "'Segoe UI', sans-serif",
-        fontSize: "28px",
-        fontWeight: 700,
-        textAlign: "center",
-      }}>
-        🎬 Landing Page Video
-      </h1>
       <Player
-        component={LandingPage}
-        durationInFrames={300}
+        component={Hub360Video}
+        durationInFrames={900}
         fps={30}
         compositionWidth={1920}
         compositionHeight={1080}
         style={{
           width: "100%",
-          maxWidth: "960px",
-          borderRadius: "12px",
+          maxWidth: "1000px",
+          borderRadius: "16px",
           overflow: "hidden",
-          boxShadow: "0 24px 80px rgba(0,0,0,0.6)",
+          boxShadow: "0 32px 100px rgba(0,0,0,0.7)",
+          border: "1px solid rgba(246,200,85,0.15)",
         }}
         controls
         autoPlay
@@ -39,11 +30,11 @@ export default function VideoPlayer() {
       />
       <p style={{
         margin: 0,
-        color: "rgba(255,255,255,0.5)",
+        color: "rgba(255,255,255,0.3)",
         fontFamily: "sans-serif",
         fontSize: "14px",
       }}>
-        Criado com Remotion • 10 segundos • 1920×1080
+        Hub360 • 30 segundos • 1920×1080 • 30fps
       </p>
     </div>
   );
